@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartRowModel" type="com.gittest.app.modules.cart.data.model.CartRowModel"/>
+    </data>
+    <FrameLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylecornerRadius">
+        <LinearLayout android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_1">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_72px"
+                android:layout_width="@dimen/_72px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_73e1591bf33714478b20a9a9897793f51e29ae75}"/>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12px"
+                android:layout_weight="0.77" android:layout_width="0dp"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirZoomP"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:text="@{cartRowModel.txtNikeAirZoomP}" style="@style/textStylePoppinsbold12_2"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginStart="@dimen/_13px" android:layout_width="@dimen/_24px"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginStart="@dimen/_8px" android:layout_width="@dimen/_24px"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt29943"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.23"
+                        android:layout_width="0dp"
+                        android:text="@{cartRowModel.txt29943}" style="@style/textStylePoppinsbold12"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px" android:layout_width="@dimen/_104px"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16px"
+            android:layout_marginEnd="@dimen/_48px"
+            android:layout_marginTop="@dimen/_64px"
+            android:layout_width="wrap_content" style="@style/groupStylecornerRadius">
+            <TextView android:id="@+id/txt"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" style="@style/textStyleregular0"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

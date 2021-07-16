@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="orderDetailsRowModel" type="com.gittest.app.modules.orderdetails.data.model.OrderDetailsRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_16px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_72px"
+                android:layout_width="@dimen/_72px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_73e1591bf33714478b20a9a9897793f51e29ae75}"/>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12px"
+                android:layout_weight="0.77" android:layout_width="0dp"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNikeAirZoomP"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:text="@{orderDetailsRowModel.txtNikeAirZoomP}" style="@style/textStylePoppinsbold12_2"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginStart="@dimen/_13px" android:layout_width="@dimen/_24px"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px"
+                        android:layout_marginStart="@dimen/_8px" android:layout_width="@dimen/_24px"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt29943"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.23"
+                        android:layout_width="0dp"
+                        android:text="@{orderDetailsRowModel.txt29943}" style="@style/textStylePoppinsbold12"/>
+                    <ImageView android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_24px" android:layout_width="@dimen/_104px"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

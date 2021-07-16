@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="reviewProductRowModel" type="com.gittest.app.modules.reviewproduct.data.model.ReviewProductRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_48px"
+                android:layout_width="@dimen/_48px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_9eb3f3647bf587a6f605ac389536e1b1e2facd7c}"/>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16px"
+                android:layout_weight="0.74" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtLauraOctavian"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{reviewProductRowModel.txtLauraOctavian}" style="@style/textStylePoppinsbold14_2"/>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_22px"
+                    android:layout_marginTop="@dimen/_4px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@color/blue_50"
+                        android:progressTint="@color/yellow_700"
+                        android:rating="4" style="@style/Widget.AppCompat.RatingBar.Small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtThisIsReally"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{reviewProductRowModel.txtThisIsReally}" style="@style/textStylePoppinsregular12"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtDecember1020"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{reviewProductRowModel.txtDecember1020}" style="@style/textStylePoppinsregular10"/>
+    </LinearLayout>
+</layout>

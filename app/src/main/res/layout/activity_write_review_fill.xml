@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="writeReviewFillVM" type="com.gittest.app.modules.writereviewfill.data.viewmodel.WriteReviewFillVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_16px"
+        android:paddingStart="@dimen/_16px" style="@style/groupStylewhite_A700cornerRadius">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_gravity="start"
+                android:layout_height="@dimen/_24px"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24px" android:layout_width="@dimen/_24px"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_weight="0.84"
+                    android:layout_width="0dp"
+                    android:text="@string/lbl_write_review" style="@style/textStylePoppinsbold16"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_44px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/msg_please_write_ov" style="@style/textStylePoppinsbold14_2"/>
+                    <LinearLayout android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:numStars="5"
+                            android:progressBackgroundTint="@color/blue_50"
+                            android:progressTint="@color/yellow_700"
+                            android:rating="4" style="@style/Widget.AppCompat.RatingBar.Indicator"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="top|start"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/msg_write_your_revi" style="@style/textStylePoppinsbold14_2"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="top|center"
+                        android:hint="@string/msg_ad_velit_volupt"
+                        android:id="@+id/etAdVelitVolupt"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_30px"
+                        android:paddingEnd="@dimen/_16px"
+                        android:paddingStart="@dimen/_16px"
+                        android:paddingTop="@dimen/_16px"
+                        android:singleLine="true"
+                        android:text="@={writeReviewFillVM.writeReviewFillModel.etAdVelitVoluptValue}"
+                        android:textColor="@color/bluegray_300"
+                        android:textColorHint="@color/bluegray_300"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_12px" android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24px"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_add_photo" style="@style/textStylePoppinsbold14_2"/>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_19px"
+                    android:layout_marginTop="@dimen/_12px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_72px"
+                            android:layout_width="@dimen/_72px"
+                            android:scaleType="fitCenter"
+                            circular="@{true}" imageRes="@{@drawable/_b76f5fae7367857d3a51392317bbd19925f7f331}"/>
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_72px"
+                            android:layout_marginStart="@dimen/_12px"
+                            android:layout_width="@dimen/_72px"
+                            android:scaleType="fitCenter"
+                            circular="@{true}" imageRes="@{@drawable/_9a0ca7861a0e3fe8dc274d347ebe01fe3d5a59a3}"/>
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_72px"
+                            android:layout_marginStart="@dimen/_12px"
+                            android:layout_width="@dimen/_72px"
+                            android:scaleType="fitCenter"
+                            circular="@{true}" imageRes="@{@drawable/_2a8afdbf76f79435ab499fbd1a57ab1bbac7e6ed}"/>
+                        <FrameLayout
+                            android:background="@drawable/oval_bg_white_a700_border_blue_50_radius_5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12px"
+                            android:layout_weight="0.26" android:layout_width="0dp"/>
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_72px" android:layout_width="@dimen/_72px"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

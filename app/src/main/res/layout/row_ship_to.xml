@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="shipToRowModel" type="com.gittest.app.modules.shipto.data.model.ShipToRowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_4">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtPriscekila"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@{shipToRowModel.txtPriscekila}" style="@style/textStylePoppinsbold14_2"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txt3711SpringHil"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@{shipToRowModel.txt3711SpringHil}" style="@style/textStylePoppinsregular12"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txt991234567890"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="wrap_content"
+            android:text="@{shipToRowModel.txt991234567890}" style="@style/textStylePoppinsregular12"/>
+        <FrameLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px" android:layout_width="match_parent">
+            <ImageView android:layout_gravity="center"
+                android:layout_height="@dimen/_57px" android:layout_width="@dimen/_125px"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_light_blue_a200_border_blue_50_radius_5"
+                android:fontFamily="@font/poppins"
+                android:gravity="top|start"
+                android:hint="@string/lbl_edit" android:id="@+id/etEdit"
+                android:layout_gravity="center|start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingBottom="@dimen/_16px"
+                android:paddingStart="@dimen/_24px"
+                android:paddingTop="@dimen/_16px"
+                android:singleLine="true"
+                android:text="@={shipToRowModel.etEditValue}"
+                android:textColor="@color/white_A700"
+                android:textColorHint="@color/white_A700"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_14px" android:textStyle="bold"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

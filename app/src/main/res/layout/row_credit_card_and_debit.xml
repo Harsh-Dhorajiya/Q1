@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="creditCardAndDebitRowModel" type="com.gittest.app.modules.creditcardanddebit.data.model.CreditCardAndDebitRowModel"/>
+    </data>
+    <LinearLayout android:clickable="true" android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylelight_blue_A200cornerRadius">
+        <FrameLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24px"
+            android:layout_marginStart="@dimen/_24px"
+            android:layout_marginTop="@dimen/_24px" android:layout_width="wrap_content">
+            <FrameLayout android:background="@drawable/oval_bg_gray_400"
+                android:layout_gravity="center|start"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <FrameLayout android:background="@drawable/oval_bg_gray_400"
+                android:layout_gravity="center|end"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </FrameLayout>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txt63269124"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_21px"
+            android:layout_marginStart="@dimen/_21px"
+            android:layout_marginTop="@dimen/_31px"
+            android:layout_width="match_parent"
+            android:text="@{creditCardAndDebitRowModel.txt63269124}" style="@style/textStylePoppinsbold24"/>
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_21px"
+            android:layout_marginStart="@dimen/_21px"
+            android:layout_marginTop="@dimen/_17px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtCardHolder"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.43" android:layout_width="0dp"
+                android:text="@{creditCardAndDebitRowModel.txtCardHolder}" style="@style/textStylePoppinsregular10_2"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtCardSave"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_37px"
+                android:layout_weight="0.57" android:layout_width="0dp"
+                android:text="@{creditCardAndDebitRowModel.txtCardSave}" style="@style/textStylePoppinsregular10_2"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27px"
+            android:layout_marginStart="@dimen/_27px"
+            android:layout_marginTop="@dimen/_2px"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtDominicOvo"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48" android:layout_width="0dp"
+                android:text="@{creditCardAndDebitRowModel.txtDominicOvo}" style="@style/textStylePoppinsbold10_3"/>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txt192042"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_33px"
+                android:layout_weight="0.52" android:layout_width="0dp"
+                android:text="@{creditCardAndDebitRowModel.txt192042}" style="@style/textStylePoppinsbold10_3"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

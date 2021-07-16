@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="explore1RowModel" type="com.gittest.app.modules.explore.data.model.Explore1RowModel"/>
+    </data>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_70px" android:layout_width="@dimen/_70px"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtDress"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="match_parent"
+            android:text="@{explore1RowModel.txtDress}" style="@style/textStylePoppinsregular10"/>
+    </LinearLayout>
+</layout>

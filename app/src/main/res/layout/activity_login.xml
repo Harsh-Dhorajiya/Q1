@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginVM" type="com.gittest.app.modules.login.data.viewmodel.LoginVM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_72px"
+            android:layout_marginTop="@dimen/_100px" android:layout_width="@dimen/_72px"/>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_welcome_to_e_co" style="@style/textStylePoppinsbold16"/>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_sign_in_to_cont" style="@style/textStylePoppinsregular12"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_blue_50_radius_5"
+            android:fontFamily="@font/poppins"
+            android:gravity="top|start"
+            android:hint="@string/lbl_your_email"
+            android:id="@+id/etYourEmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_28px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_13px" android:singleLine="true"
+            android:text="@={loginVM.loginModel.etYourEmailValue}"
+            android:textColor="@color/bluegray_300"
+            android:textColorHint="@color/bluegray_300"
+            android:textFontWeight="400" android:textSize="@dimen/_12px" android:textStyle="normal"/>
+        <EditText
+            android:background="@drawable/rectangle_border_blue_50_radius_5"
+            android:fontFamily="@font/poppins"
+            android:gravity="top|start"
+            android:hint="@string/lbl_password"
+            android:id="@+id/etPassword"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_13px" android:singleLine="true"
+            android:text="@={loginVM.loginModel.etPasswordValue}"
+            android:textColor="@color/bluegray_300"
+            android:textColorHint="@color/bluegray_300"
+            android:textFontWeight="400" android:textSize="@dimen/_12px" android:textStyle="normal"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:clickable="true" android:gravity="center"
+            android:id="@+id/btnSignIn"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_18px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_16px"
+            android:text="@string/lbl_sign_in" style="@style/textStylePoppinsbold14"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_19px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <View android:background="@color/blue_50"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_1px"
+                android:layout_weight="0.39" android:layout_width="0dp"/>
+            <TextView android:gravity="top|start"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_28px"
+                android:layout_weight="0.14" android:layout_width="0dp"
+                android:text="@string/lbl_or" style="@style/textStylePoppinsbold14_1"/>
+            <View android:background="@color/blue_50"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_1px"
+                android:layout_marginStart="@dimen/_23px"
+                android:layout_weight="0.47" android:layout_width="0dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_57px"
+                android:layout_marginStart="@dimen/_7px" android:layout_width="@dimen/_24px"/>
+            <TextView android:gravity="top|center"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.62" android:layout_width="0dp"
+                android:text="@string/msg_login_with_goog" style="@style/textStylePoppinsbold14_1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_57px"
+                android:layout_marginStart="@dimen/_7px" android:layout_width="@dimen/_24px"/>
+            <TextView android:gravity="top|center"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65" android:layout_width="0dp"
+                android:text="@string/msg_login_with_face" style="@style/textStylePoppinsbold14_1"/>
+        </LinearLayout>
+        <TextView android:gravity="top|center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="wrap_content"
+            android:text="@string/msg_forgot_password" style="@style/textStylePoppinsbold12"/>
+        <TextView android:clickable="true" android:gravity="top|center"
+            android:id="@+id/txtDonTHaveA"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8px"
+            android:layout_width="wrap_content"
+            android:text="@{loginVM.loginModel.txtDonTHaveA}" style="@style/textStylePoppinsbold12_1"/>
+    </LinearLayout>
+</layout>

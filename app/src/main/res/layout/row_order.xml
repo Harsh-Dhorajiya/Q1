@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="orderRowModel" type="com.gittest.app.modules.order.data.model.OrderRowModel"/>
+    </data>
+    <LinearLayout android:clickable="true" android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtLqnsu346jk"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="wrap_content"
+            android:text="@{orderRowModel.txtLqnsu346jk}" style="@style/textStylePoppinsbold14_2"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtOrderAtEComm"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{orderRowModel.txtOrderAtEComm}" style="@style/textStylePoppinsregular12_1"/>
+            <View android:background="@color/blue_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1px"
+                android:layout_marginTop="@dimen/_12px" android:layout_width="match_parent"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_11px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtOrderStatus"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26" android:layout_width="0dp"
+                android:text="@{orderRowModel.txtOrderStatus}" style="@style/textStylePoppinsregular12_1"/>
+            <TextView android:gravity="top|end"
+                android:id="@+id/txtShipping"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.74" android:layout_width="0dp"
+                android:text="@{orderRowModel.txtShipping}" style="@style/textStylePoppinsregular12_1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtItems"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12" android:layout_width="0dp"
+                android:text="@{orderRowModel.txtItems}" style="@style/textStylePoppinsregular12_1"/>
+            <TextView android:gravity="top|end"
+                android:id="@+id/txt2ItemsPurchas"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.82" android:layout_width="0dp"
+                android:text="@{orderRowModel.txt2ItemsPurchas}" style="@style/textStylePoppinsregular12_1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_marginTop="@dimen/_12px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtPrice"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" android:layout_width="0dp"
+                android:text="@{orderRowModel.txtPrice}" style="@style/textStylePoppinsregular12_1"/>
+            <TextView android:gravity="top|end"
+                android:id="@+id/txt29943"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.82" android:layout_width="0dp"
+                android:text="@{orderRowModel.txt29943}" style="@style/textStylePoppinsbold12"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
